@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Добриво Главная</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="layout">
+
+
+    <div class="background__image"></div>
+
+
+    <header class="header">
+      <div class="row">
+        <h1 class="title">Добриво</h1>
+        <div class="row">
+          <nav class="links">
+            <span>оплата и доставка</span>
+            <span>новости</span>
+            <span>справочник</span>
+            <span>сертификаты</span>
+          </nav>
+          <select class="lang-selector">
+            <option>RU</option>
+            <option>UA</option>
+          </select>
+        </div>
+      </div>
+      <div class="menu-container">
+        <nav class="row">
+          <ul class="menu">
+            <li>нагро-удобрение</li>
+            <li>биодизель</li>
+            <li>силко</li>
+            <li>интернет-магазин</li>
+            <li>вопросы-ответы</li>
+            <li>контакты</li>
+          </ul>
+        </nav>
+        <button class="basket">
+          <i class="fas fa-shopping-cart basket-icon"></i>
+          корзина
+        </button>
+      </div>
+      <section class="subtitle">
+        <span>органическое</span>
+        <span>нано-удобрение</span>
+        <span>добриво</span>
+      </section>
+
+    </header>
+
+    <section class="main">
+      <div class="left">
+        <div class="first">
+          <img class="bottle" src="./img/oil2.png" alt="bottle" />
+          <p class="description">
+            Хотите <br />
+            трали-вали <br />
+            ла-лала?
+          </p>
+        </div>
+        <div class="second">
+          <div class="text-item">
+            <span class="title">прирост урожая</span>
+            <span class="sub-title">в сравнении с химическим удобрением</span>
+            <span class="description">30%-250%</span>
+          </div>
+          <div class="text-item">
+            <span class="title">экономия</span>
+            <span class="sub-title">химических удобрений в хозяйстве</span>
+            <span class="description">до 70%</span>
+          </div>
+          <div class="text-item">
+            <span class="title">рост корневой</span>
+            <span class="sub-title">системы растений при использовании</span>
+            <span class="description">в 3-10раз</span>
+          </div>
+          <span class="more-text">узнайте <br />
+            о нагро больше</span>
+          <button class="more-button" type="button">узнать больше</button>
+        </div>
+      </div>
+      <div class="right"></div>
+    </section>
+
+    <div class="form-container">
+      <form class="calculator">
+        <h3 class="form-title">посчитайте прибыль</h3>
+        <span class="calculator-subtitle"><b>добриво</b> эффективнее химии</span>
+        <div class="divider"></div>
+        <div class="input-container">
+          <label class="input-label" for="culture">Выберите культуру</label>
+          <select class="culture-select" id="culture" autofocus="true">
+            <option value="3100">Пшеница = 3100 грн / т</option>
+            <option value="2800">Кукуруза = 2800 грн / т</option>
+            <option value="1300">Овес = 1300 грн / т</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label class="input-label" for="culture">Урожайность, ц/га</label>
+          <input name="harvest" class="number-input" type="number" />
+          <span class="input-error error-harvest"></span>
+        </div>
+        <div class="input-container">
+          <label class="input-label" for="culture">Стоимость хим. удобрения, грн/га</label>
+          <input name="price" class="number-input" type="number" />
+          <span class="input-error error-price"></span>
+        </div>
+        <div class="input-container">
+          <label class="input-label" for="culture">Посевная площадь, га</label>
+          <input name="area" class="number-input" type="number" />
+          <span class="input-error error-area"></span>
+        </div>
+        <div class="divider-bottom"></div>
+        <span class="orange-text"> прибыль от добрива </span>
+        <span class="price-text"></span>
+        <span class="currency-text">грн</span>
+      </form>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
